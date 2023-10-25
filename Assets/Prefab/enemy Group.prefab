@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7698027032975035880}
-  - component: {fileID: 3289000895463931905}
   m_Layer: 0
   m_Name: enemy Group
   m_TagString: Untagged
@@ -50,25 +49,6 @@ Transform:
   - {fileID: 1031149113019514583}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3289000895463931905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8486326978193411331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82140479a853e344b8ec39633419ec7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  limitL: {fileID: 9420525234329818, guid: bbbdfd6fae880f249bd182ed098b0a09, type: 3}
-  limitR: {fileID: 6194169320350641301, guid: 0e1252e9b27fcc74da6c54af27f8e13d, type: 3}
-  speed: 0.004
-  speedDown: 0
-  tpDown: 0.3
-  goLeft: 1
-  goRight: 0
 --- !u!1001 &460754186157936518
 PrefabInstance:
   m_ObjectHideFlags: 0

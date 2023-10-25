@@ -11,6 +11,8 @@ public class Bullet : MonoBehaviour
 
     public Player myPlayer;
 
+    //public enemy_travel infoEnemy;
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,10 +24,12 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //collision.gameObject.GetComponent<enemy_travel>().numberEnemy--;
         Destroy(collision.gameObject);
         Destroy(gameObject);
         Instantiate(lootKill, collision.transform.position, collision.transform.rotation);
         myPlayer.score ++;
+
     }
 
 }

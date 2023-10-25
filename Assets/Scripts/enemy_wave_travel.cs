@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemy_travel : MonoBehaviour
+public class enemy_wave_travel : MonoBehaviour
 {
 
     public Transform limitL;
     public Transform limitR;
-    public Transform spawn;
+
 
     public float speed;
     public float speedDown;
@@ -15,13 +15,6 @@ public class enemy_travel : MonoBehaviour
 
     public bool goLeft = true;
     public bool goRight = false;
-
-    public int numberEnemy = 18;
-
-    public float timer;
-
-    public GameObject groupSpawn;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +23,6 @@ public class enemy_travel : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-
     {
         if (goLeft == true)
         {
@@ -46,7 +38,7 @@ public class enemy_travel : MonoBehaviour
         {
             goLeft = false;
             goRight = true;
-            transform.position += Vector3.down*tpDown;
+            transform.position += Vector3.down * tpDown;
         }
         if (transform.position.x > limitR.position.x)
         {
@@ -54,21 +46,6 @@ public class enemy_travel : MonoBehaviour
             goRight = false;
             transform.position += Vector3.down * tpDown;
 
-        }
-
-        //transform.position += Vector3.down * speedDown;
-
-        if (numberEnemy == 9 && groupSpawn == false)
-        {
-            Instantiate(groupSpawn, spawn.position, spawn.rotation);
-        }
-
-        timer += Time.deltaTime;
-        if (timer >= 10)
-        {
-            print("nouvelle vague");
-            Instantiate(groupSpawn, spawn.position, spawn.rotation);
-            timer = 0;
         }
 
     }

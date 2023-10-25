@@ -19,7 +19,6 @@ public class Player : MonoBehaviour
     public TextMeshProUGUI moneyUI;
     public TextMeshProUGUI scoreUI;
 
-    //public enemy_travel numberEnemy;
 
     // Start is called before the first frame update
     void Start()
