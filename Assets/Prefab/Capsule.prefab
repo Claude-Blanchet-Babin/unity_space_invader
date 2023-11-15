@@ -165,7 +165,8 @@ MonoBehaviour:
   monRigidBody: {fileID: 6863447708074395207}
   speed: 12
   lootKill: {fileID: 2456992621043312410, guid: cb5f597215f37614890be8aaac38ed7e, type: 3}
-  transform: {fileID: 330690868964083747}
+  explosion: {fileID: 8078691502907809026, guid: 659c2f2b229e33045a1bc5cc094d1005, type: 3}
+  myPlayer: {fileID: 0}
 --- !u!96 &5144115588052714144
 TrailRenderer:
   serializedVersion: 3

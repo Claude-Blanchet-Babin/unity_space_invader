@@ -7,9 +7,10 @@ public class Bullet : MonoBehaviour
     public Rigidbody2D monRigidBody;
     public float speed;
     public GameObject lootKill;
+    public GameObject explosion;
 
 
-    public Player myPlayer;
+    public PlayerManager myPlayer;
 
     //public enemy_travel infoEnemy;
 
@@ -19,7 +20,7 @@ public class Bullet : MonoBehaviour
     {
         monRigidBody.velocity = Vector3.up*speed;
 
-        myPlayer = FindObjectOfType<Player>();
+        myPlayer = FindObjectOfType<PlayerManager>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -28,6 +29,7 @@ public class Bullet : MonoBehaviour
         Destroy(collision.gameObject);
         Destroy(gameObject);
         Instantiate(lootKill, collision.transform.position, collision.transform.rotation);
+        Instantiate(explosion, collision.transform.position, collision.transform.rotation);
         myPlayer.score ++;
 
     }

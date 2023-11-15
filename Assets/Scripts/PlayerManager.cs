@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 
 
-public class Player : MonoBehaviour
+public class PlayerManager : MonoBehaviour
 {
     public GameObject bullet;
     public Transform parent;
@@ -45,8 +45,8 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && money >= 5)
         {
             Instantiate(bullet, parent.position, parent.rotation);
-            Instantiate(bullet, parent.position + new Vector3(1,0,0), parent.rotation);
-            Instantiate(bullet, parent.position - new Vector3(1, 0, 0), parent.rotation);
+            Instantiate(bullet, parent.position + new Vector3(0.5f,0,0), parent.rotation);
+            Instantiate(bullet, parent.position - new Vector3(0.5f,0,0), parent.rotation);
             money -= 5;
             moneyUI.text = "Money : " + money;
         }

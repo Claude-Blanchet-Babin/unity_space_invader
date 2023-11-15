@@ -10,7 +10,6 @@ public class enemy_travel : MonoBehaviour
     public Transform spawn;
 
     public float speed;
-    public float speedDown;
     public float tpDown;
 
     public bool goLeft = true;
@@ -32,6 +31,8 @@ public class enemy_travel : MonoBehaviour
     void Update()
 
     {
+
+        // définir le déplacement du groupe d'ennemi
         if (goLeft == true)
         {
             transform.position += Vector3.left * speed;
@@ -42,6 +43,7 @@ public class enemy_travel : MonoBehaviour
             transform.position += Vector3.right * speed;
         }
 
+        // faire en sorte que le groupe se déplace vers le bas lorsqu'il touche un bord de l'écran
         if (transform.position.x < limitL.position.x)
         {
             goLeft = false;
@@ -56,12 +58,10 @@ public class enemy_travel : MonoBehaviour
 
         }
 
-        //transform.position += Vector3.down * speedDown;
 
-        if (numberEnemy == 9 && groupSpawn == false)
-        {
-            Instantiate(groupSpawn, spawn.position, spawn.rotation);
-        }
+
+
+        // faire apparaitre une nouvelle vague 
 
         timer += Time.deltaTime;
         if (timer >= 10)
