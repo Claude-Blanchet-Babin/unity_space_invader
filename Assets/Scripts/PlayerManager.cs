@@ -18,6 +18,7 @@ public class PlayerManager : MonoBehaviour
 
     public TextMeshProUGUI moneyUI;
     public TextMeshProUGUI scoreUI;
+    public TextMeshProUGUI infoUI;
 
 
     // Start is called before the first frame update
@@ -61,6 +62,16 @@ public class PlayerManager : MonoBehaviour
         }
 
         scoreUI.text = "Score : " + score;
+
+        if(money>=5)
+        {
+            infoUI.text = "Special shot available (SHIFT)";
+        }
+
+        if (money < 5)
+        {
+            infoUI.text = " ";
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)
