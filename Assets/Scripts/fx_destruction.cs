@@ -18,7 +18,7 @@ public class fx_destruction : MonoBehaviour
     void Update()
     {
 
-
+        // faire en sorte que l'émetteur disparaisse au bout de quelques secondes
         timer += Time.deltaTime;
         if (timer >= 3)
         {
