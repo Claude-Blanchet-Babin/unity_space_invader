@@ -24,6 +24,7 @@ public class enemy_wave_travel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // déplacement de la vague
         if (goLeft == true)
         {
             transform.position += Vector3.left * speed;
@@ -34,6 +35,7 @@ public class enemy_wave_travel : MonoBehaviour
             transform.position += Vector3.right * speed;
         }
 
+        // faire descendre la vague
         if (transform.position.x < limitL.position.x)
         {
             goLeft = false;
