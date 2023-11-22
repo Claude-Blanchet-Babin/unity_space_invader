@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class bullet : MonoBehaviour
 {
     // déclaration des variables
     public Rigidbody2D myRigidBody;
     public float speed;
     public GameObject lootKill;
     public GameObject explosion;
-    public PlayerManager myPlayer;
+    public playerManager myPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -17,10 +17,10 @@ public class Bullet : MonoBehaviour
         // définir la vitesse de déplacement du projectile
         myRigidBody.velocity = Vector3.up*speed;
 
-        myPlayer = FindObjectOfType<PlayerManager>();
+        myPlayer = FindObjectOfType<playerManager>();
     }
 
-    // Détectetion d'une collision entre la balle et un ennemi
+    // détectetion d'une collision entre la balle et un ennemi
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // destruction de l'ennemi

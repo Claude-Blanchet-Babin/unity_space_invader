@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6194169320350641301}
   m_Layer: 0
-  m_Name: Limmit R enemy
+  m_Name: limmit R enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

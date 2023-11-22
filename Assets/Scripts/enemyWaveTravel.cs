@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemy_wave_travel : MonoBehaviour
+public class enemyWaveTravel : MonoBehaviour
 {
 
+    // déclaration des variables
     public Transform limitL;
     public Transform limitR;
 
-
     public float speed;
-    public float speedDown;
     public float tpDown;
 
     public bool goLeft = true;
     public bool goRight = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,7 @@ public class enemy_wave_travel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // déplacement de la vague
+        // déplacement de la vague d'un bord à l'autre de l'écran
         if (goLeft == true)
         {
             transform.position += Vector3.left * speed;
@@ -35,7 +35,7 @@ public class enemy_wave_travel : MonoBehaviour
             transform.position += Vector3.right * speed;
         }
 
-        // faire descendre la vague
+        // faire descendre la vague à chaque fois qu'elle touche un rebord
         if (transform.position.x < limitL.position.x)
         {
             goLeft = false;

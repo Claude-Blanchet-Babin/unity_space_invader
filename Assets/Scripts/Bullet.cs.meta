@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - monRigidBody: {instanceID: 0}
+  - myRigidBody: {fileID: 6863447708074395207, guid: a56b1226008b30644bcf65814b9bb2e6, type: 3}
   - lootKill: {fileID: 2456992621043312410, guid: cb5f597215f37614890be8aaac38ed7e, type: 3}
   - explosion: {fileID: 8078691502907809026, guid: 659c2f2b229e33045a1bc5cc094d1005, type: 3}
   - myPlayer: {instanceID: 0}

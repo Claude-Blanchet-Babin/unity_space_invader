@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class fx_destruction : MonoBehaviour
+public class vfxDestruction : MonoBehaviour
 {
 
+    // déclaration des variables
     public GameObject particle;
     public float timer;
 

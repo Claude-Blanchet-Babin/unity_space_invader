@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 215893956}
   - component: {fileID: 215893955}
   m_Layer: 5
-  m_Name: Text score
+  m_Name: text score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -267,7 +267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 234670887}
   m_Layer: 0
-  m_Name: SpawnPoint
+  m_Name: spawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -298,7 +298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 337459871}
   m_Layer: 0
-  m_Name: Limmit L enemy
+  m_Name: limit L enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -466,7 +466,6 @@ MonoBehaviour:
   tpDown: 0.6
   goLeft: 1
   goRight: 0
-  numberEnemy: 18
   timer: 0
   groupSpawn: {fileID: 7570002730376967350, guid: d6cff5efffd911e4e9f301bcb9e3b757, type: 3}
 --- !u!1 &983346834
@@ -482,7 +481,7 @@ GameObject:
   - component: {fileID: 983346838}
   - component: {fileID: 983346839}
   m_Layer: 0
-  m_Name: Player
+  m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -635,7 +634,7 @@ GameObject:
   - component: {fileID: 1381339646}
   - component: {fileID: 1381339645}
   m_Layer: 5
-  m_Name: Text information
+  m_Name: text information
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -769,7 +768,7 @@ GameObject:
   - component: {fileID: 1433840463}
   - component: {fileID: 1433840462}
   m_Layer: 5
-  m_Name: Text money
+  m_Name: text money
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -903,7 +902,7 @@ GameObject:
   - component: {fileID: 1724242915}
   - component: {fileID: 1724242914}
   m_Layer: 0
-  m_Name: Square
+  m_Name: square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1031,7 +1030,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899504735}
   m_Layer: 0
-  m_Name: Limmit R
+  m_Name: limit R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1062,7 +1061,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1923840854}
   m_Layer: 0
-  m_Name: 'Limmit L '
+  m_Name: 'limit L '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1197,7 +1196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2000092818}
   m_Layer: 0
-  m_Name: Limmit R enemy
+  m_Name: limit R enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1294,6 +1293,74 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 127961501121903532, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy B.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 332226056547135083, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy A.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481041085955943177, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy A.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986152271378490081, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy A.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2037212178113680484, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy A.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243554655425652256, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy A.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2378787768339578560, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy A.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2408136407314180164, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy A.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2905942432232836186, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy A.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3023074260684438768, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy A.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114044687581967671, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy A.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3279607818211227083, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy B.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3773437459157099435, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy B.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486995347837621860, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy A.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098764510261172398, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy A.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507398808327606680, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy B.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387799633293830542, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy A.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7698027032975035880, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1334,9 +1401,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8047428080205772837, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
+      propertyPath: m_Name
+      value: enemy A.7
+      objectReference: {fileID: 0}
     - target: {fileID: 8486326978193411331, guid: 8a7274d94ba5ea24bb45664d691af5f9, type: 3}
       propertyPath: m_Name
-      value: Ennemies A
+      value: enemy group A
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -4,10 +4,11 @@ using UnityEngine;
 using TMPro;
 
 
-public class PlayerManager : MonoBehaviour
+public class playerManager : MonoBehaviour
 {
     // déclaration des variables
     public GameObject bullet;
+
     public Transform parent;
     public Transform limitL;
     public Transform limitR;
@@ -32,7 +33,6 @@ public class PlayerManager : MonoBehaviour
     void Update()
     {
         // définition des déplacements du joueur
-        
         if(Input.GetKey(KeyCode.LeftArrow))
         {
             transform.position += Vector3.left*speed;

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemy_travel : MonoBehaviour
+public class enemyTravel : MonoBehaviour
 {
 
     // déclaration des variables
@@ -31,7 +31,7 @@ public class enemy_travel : MonoBehaviour
 
     {
 
-        // définir le déplacement du groupe d'ennemi
+        // définir le déplacement du groupe d'ennemi d'un bord à l'autre de l'écran
         if (goLeft == true)
         {
             transform.position += Vector3.left * speed;
@@ -60,8 +60,10 @@ public class enemy_travel : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= 10)
         {
+            // informer sur l'apparition de la vague
             print("new wave");
             Instantiate(groupSpawn, spawn.position, spawn.rotation);
+            // réinitialiser le timer
             timer = 0;
         }
     }
