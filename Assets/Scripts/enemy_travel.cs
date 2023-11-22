@@ -5,6 +5,7 @@ using UnityEngine;
 public class enemy_travel : MonoBehaviour
 {
 
+    // d√©claration des variables
     public Transform limitL;
     public Transform limitR;
     public Transform spawn;
@@ -14,8 +15,6 @@ public class enemy_travel : MonoBehaviour
 
     public bool goLeft = true;
     public bool goRight = false;
-
-    public int numberEnemy = 18;
 
     public float timer;
 
@@ -32,7 +31,7 @@ public class enemy_travel : MonoBehaviour
 
     {
 
-        // dÈfinir le dÈplacement du groupe d'ennemi
+        // d√©finir le d√©placement du groupe d'ennemi
         if (goLeft == true)
         {
             transform.position += Vector3.left * speed;
@@ -43,7 +42,7 @@ public class enemy_travel : MonoBehaviour
             transform.position += Vector3.right * speed;
         }
 
-        // faire en sorte que le groupe se dÈplace vers le bas lorsqu'il touche un bord de l'Ècran
+        // faire en sorte que le groupe se d√©place vers le bas lorsqu'il touche un bord de l'√©cran
         if (transform.position.x < limitL.position.x)
         {
             goLeft = false;
@@ -55,21 +54,15 @@ public class enemy_travel : MonoBehaviour
             goLeft = true;
             goRight = false;
             transform.position += Vector3.down * tpDown;
-
         }
 
-
-
-
-        // faire apparaitre une nouvelle vague 
-
+        // faire apparaitre une nouvelle vague √† intervalle r√©gulier
         timer += Time.deltaTime;
         if (timer >= 10)
         {
-            print("nouvelle vague");
+            print("new wave");
             Instantiate(groupSpawn, spawn.position, spawn.rotation);
             timer = 0;
         }
-
     }
 }
